@@ -23,27 +23,6 @@ def get_total_words(txt_file):
     return count
 
 
-def get_character_count(text_file):
-    char_count_total = {}
-    text_file_lower = text_file.lower()
-    letters = list(text_file_lower)
-    for i in letters:
-        if i not in char_count_total:
-            char_count_total[i] = 1
-        else:
-            char_count_total[i] += 1
-    return char_count_total
 
-#func takes get_character count and sorts
-def sort_character_count(char_count_total):
-    sorted = char_count_total.sort
-    
-    
-    return sorted
-    
-
-def get_book_text(path):
-    with open(path) as f:
-        return f.read()
 
 main()
